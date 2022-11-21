@@ -1,0 +1,11 @@
+  /* Card Section */
+  
+  .layer1 .won-msg span{
+    background: -webkit-linear-gradient(#00ff00,#009100 );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1em;
+  }
+ 
+ 
+  

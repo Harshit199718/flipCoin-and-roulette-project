@@ -1,38 +1,204 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(./assets/fonts/Type\ Juice\ -\ Unison\ Pro\ Bold.otf);
+}
+
+@font-face {
+  font-family: myFirstFont1;
+  src: url(./assets//fonts/Type\ Juice\ -\ Unison\ Pro\ Light.otf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: myFirstFont;
+}
+
 .App {
+  min-height: 105vh;
+  position: relative;
+  min-width: 100%;
+  background: url("./assets/img/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.App button,
+.sidebar .nav-list li a {
+  cursor: pointer;
+}
+
+
+.gray-bg {
+  background: #00061c;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.p-0 {
+  padding: 0 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.layer1 .lotte {
+  width: 42% !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.layer1 {
+  background-color: rgba(225, 165, 0, 0.15);
+  font-size: 11px;
+  color: white;
+  width: 26vmax;
+  height: 75vmin;
+  border: 12px solid #ffce00;
+  border-radius: 7vmin;
+  box-shadow: 0px 0px 20px 6px #ffce00, inset 0px 0px 20px 6px #ffce00;
+  /* -webkit-box-shadow: 0 0 10px #ffce00;
+  box-shadow: 0 0 10px #ffce00;*/
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 3% 0px;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.layer1 .flip-more {
+  text-transform: uppercase;
+  font-size: 2em;
+  padding: 13px 32px;
+  background: -webkit-linear-gradient(#FBFF29, #F92D00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.layer1 .flip-more div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #433e49;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.layer1 .coin-img {
+  position: relative;
+  text-align: center;
+}
+
+.layer1 .coin-side {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: black;
+  transform: translate(-50%, -50%);
+}
+
+.layer1 h1 {
+  font-size: 2em;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.layer1 .side-icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 1366),
+screen and (max-height: 768px) {
+  .layer1, .layer2, .layer3 {
+    font-size: 9px;
   }
 }
+
+@media screen and (max-width: 1024px),
+screen and (max-height: 600px) {
+  .layer1, .layer2 {
+    font-size: 8px!important
+    /* padding: 0; */
+  }
+
+  .lotte {
+    width: 47%;
+    height: auto;
+  }
+ 
+}
+
+
+@media screen and (max-width: 920px),
+screen and (max-height: 500px) {
+  .layer1, .layer2 {
+    padding: 20px;
+    width: 32vmax;
+  }
+  .layer1{
+    font-size: 6px;
+
+  }
+
+  .lotte {
+    width: 36%;
+  }
+
+  .layer1 .flip-more, .layer2 .flip-more {
+    padding: 13px 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .App {
+    min-height: 116vh
+  }
+  .layer1 {
+    width: 50vmax;
+    height: 70vmax;
+    top: 56%;
+    font-size: 8px;
+    border-width: 9px !important;
+  }
+
+  .layer1 .side-icon {
+    display: flex !important;
+    margin-right: 0;
+    margin-left: auto;
+    height: 25px;
+    width: 80px !important;
+    background: #3F3946;
+    border: none;
+  }
+
+  .layer1 .side-icon .icon-btn:nth-child(1) img {
+    width: 15px;
+    height: auto;
+  }
+
+  .layer1 .side-icon .icon-btn:nth-child(2) img {
+    width: 15px; 
+    /* margin: 0 -4px 0 2px; */
+    height: auto;
+  }
+
+  .layer1 .side-icon .icon-btn:nth-child(3) img {
+    width: 15px;
+    height: auto;
+  }
+}
+
+/* mobile view sidebar css */

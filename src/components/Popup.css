@@ -1,0 +1,63 @@
+.pop-up {
+    background-color: #1A2949;
+    width: 210px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 12px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    border-radius: 20px;
+    position: absolute;
+    top: 45px;
+    left: 5%;
+    text-align: left;
+    line-height: 1.2;
+    cursor: default;
+    pointer-events: none;
+}
+
+.pop-up p{
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+.pop-up .popup-head{
+    font-weight: 800;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+.pop-up p a{
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+.pop-up .win{
+    color: #2BD483;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.pop-up .lose{
+    color: #D32C2C;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+.pop-up .luck{
+    color: #00D1D1;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+@media (max-width: 576px){
+    .pop-up{
+width: 24vmax!important;
+height: 33vmax;
+z-index: 1;
+font-size: 8px!important;
+padding: 10px 10px;;
+top: 32px;
+left: -70%;
+}
+}

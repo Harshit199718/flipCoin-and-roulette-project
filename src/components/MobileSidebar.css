@@ -1,0 +1,157 @@
+.sidebar-mobile {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  background-color: #0F1936;
+  transition: all .7s .4s ease-in-out;
+}
+
+.sidebar-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 160px;
+}
+
+.sidebar-item {
+  margin: 30px 0;
+  opacity: 0;
+  transform: translateY(-40px);
+}
+
+.sidebar-item:first-child {
+  transition: all 1s .6s ease-in-out;
+}
+
+.sidebar-item:nth-child(2) {
+  transition: all 1s .6s ease-in-out;
+}
+
+.sidebar-item:nth-child(3) {
+  transition: all 1s .6s ease-in-out;
+}
+
+.sidebar-item:nth-child(4) {
+  transition: all 1s .6s ease-in-out;
+}
+
+.sidebar-item:last-child {
+  transition: all 1s .6s ease-in-out;
+}
+
+.sidebar-item.active {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.sidebar-anchor {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 7px;
+}
+
+.sidebar-anchor:before {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #FFF;
+  transition: all .7s ease-in-out;
+}
+
+.sidebar-anchor:hover:before {
+  width: 100%;
+}
+
+.move-to-left {
+  left: 0;
+}
+
+.init-position {
+  left: 100vw;
+}
+
+#main-app {
+  transition: transform .7s ease-in-out;
+  z-index: 2;
+
+}
+
+.bar {
+  display: block;
+  height: 5px;
+  width: 30px;
+  background-color: #EF8354;
+  margin: 10px auto;
+}
+
+#button-toggle {
+  cursor: pointer;
+  display: none;
+  width: auto;
+  /* margin: 0 auto; */
+  float: right;
+  transition: all .7s ease;
+  flex: 1;
+}
+
+.show-cross {
+  display: inline-block !important;
+}
+
+.nav-right {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100vw;
+  right: 40px;
+  top: 20px;
+  /* padding-right: 35px; */
+  transition: all .7s .4s ease-in-out;
+}
+
+.nav-right.visible-xs {
+  z-index: 3;
+}
+
+.hidden-xs {
+  display: none;
+}
+
+.middle {
+  margin: 0 auto;
+}
+
+.bar {
+  transition: all .7s ease;
+}
+
+.nav-right.visible-xs .active .bar {
+  background-color: #FFF;
+  transition: all .7s ease;
+}
+
+#button-toggle.active .top {
+  transform: translateY(15px) rotateZ(45deg);
+}
+
+#button-toggle.active .bottom {
+  transform: translateY(-15px) rotateZ(-45deg);
+}
+
+#button-toggle.active .middle {
+  width: 0;
+}

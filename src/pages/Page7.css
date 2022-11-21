@@ -1,0 +1,21 @@
+ .layer2 .won-msg span {
+     background: -webkit-linear-gradient(#00ff00, #009100);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-size: 1em;
+ }
+
+ .layer2 .num-box {
+     border: 1px solid #DCA815;
+     width: 180px;
+     height: 126px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #262121;
+
+ }
+
+ .layer2 .num-box h1 {
+     font-size: 4em;
+ }

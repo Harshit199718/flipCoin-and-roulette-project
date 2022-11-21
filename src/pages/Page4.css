@@ -1,0 +1,11 @@
+  /* Card Section */
+  
+  .layer1 .msg {
+    background: -webkit-linear-gradient( #FF0000, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.73em;
+    
+  }
+  
+ 

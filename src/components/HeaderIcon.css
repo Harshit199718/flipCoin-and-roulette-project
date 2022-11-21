@@ -1,0 +1,19 @@
+.side-icon {
+    border: 2px solid#FFFFFF;
+    height: 26.21px;
+    width: 100px!important;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    padding: 2px 10px;
+    border-radius: 20px;
+    margin-right: 30px;
+    position: relative;
+  }
+
+  .side-icon .icon-btn {
+    background-color: transparent;
+    border: none;
+    line-height: 0%;
+    width: 100%;
+  }
