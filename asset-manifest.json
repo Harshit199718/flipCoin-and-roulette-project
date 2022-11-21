@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/flipCoin-and-roulette-project/static/css/main.39029c66.css",
+    "main.js": "/flipCoin-and-roulette-project/static/js/main.96f3ec90.js",
+    "static/js/845.99b31202.chunk.js": "/flipCoin-and-roulette-project/static/js/845.99b31202.chunk.js",
+    "static/media/background.jpg": "/flipCoin-and-roulette-project/static/media/background.f88bd9e604ac75914efe.jpg",
+    "static/media/sound.mp3": "/flipCoin-and-roulette-project/static/media/sound.ecffff5ef3535b4e5c89.mp3",
+    "static/media/logo.png": "/flipCoin-and-roulette-project/static/media/logo.eab29d09470e5c0a4950.png",
+    "static/media/Type Juice - Unison Pro Light.otf": "/flipCoin-and-roulette-project/static/media/Type Juice - Unison Pro Light.01767c89de28471bbe5e.otf",
+    "static/media/Type Juice - Unison Pro Bold.otf": "/flipCoin-and-roulette-project/static/media/Type Juice - Unison Pro Bold.51ad4845df6ad02b161c.otf",
+    "static/media/lost-coin.png": "/flipCoin-and-roulette-project/static/media/lost-coin.dbb30445e06a5c3e7ccf.png",
+    "static/media/won-coin.png": "/flipCoin-and-roulette-project/static/media/won-coin.ae9c3102838820da438e.png",
+    "static/media/Background.png": "/flipCoin-and-roulette-project/static/media/Background.152ed6b78d063561761e.png",
+    "index.html": "/flipCoin-and-roulette-project/index.html",
+    "main.39029c66.css.map": "/flipCoin-and-roulette-project/static/css/main.39029c66.css.map",
+    "main.96f3ec90.js.map": "/flipCoin-and-roulette-project/static/js/main.96f3ec90.js.map",
+    "845.99b31202.chunk.js.map": "/flipCoin-and-roulette-project/static/js/845.99b31202.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39029c66.css",
+    "static/js/main.96f3ec90.js"
+  ]
+}
