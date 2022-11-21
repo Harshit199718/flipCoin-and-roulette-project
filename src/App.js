@@ -1,5 +1,5 @@
 import React, { createContext, useEffect, useReducer, useState } from 'react'
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Header from './components/Header'
 import Page1 from './pages/Page1'
@@ -88,7 +88,7 @@ const App = () => {
         {/* <audio controls autoPlay hidden muted={state.muted} id="audio" preload='auto'>
           <source src={require("./assets/sound.mp3")} type="audio/mpeg" />unsupported !!</audio> */}
         <Provider value={{ state, dispatch }}>
-          <BrowserRouter>
+          <HashRouter>
             <Header />
             <Sidebar />
             <MoblieSidebar />
@@ -102,7 +102,7 @@ const App = () => {
               <Route path="/page7" element={<Page7/>} />
               <Route path="/page8" element={<Page8/>} />
             </Routes>
-          </BrowserRouter>
+          </HashRouter>
         </Provider>
       </div>
     </>
